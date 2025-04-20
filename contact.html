@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NSD Safety Nets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="nsdlogo.png" alt="NSD Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>NSD <span>SAFETY NETS</span></h1>
+                <p>Your Safety, Our Priority</p>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item dropdown">
+                    Services <i class="fas fa-chevron-down"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="safetynets.html">Safety Nets</a></li>
+                        <li><a href="invisiblegrills.html">Invisible Grills</a></li>
+                        <li><a href="clothhanger.html">Cloth Hangers</a></li>
+                        <li><a href="monkey-nets.html">Monkey Nets</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact" style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="margin-top: 100px;" class="cont-h2">Contact Us</h2>
+                <p>We're here to help with all your safety needs</p>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+                <div>
+                    <h3>Get in Touch</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <a href="tel:+918332005642" class="fa fa-phone"></a>
+                            <span>+91 83320 05642</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nsdsafetynets.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>#123, Safety Lane, Hyderabad, Telangana</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-contact-form">
+                    <h3>Request a Quote</h3>
+                    <form id="contactForm" onsubmit="sendToWhatsApp(); return false;">
+                        <input type="text" id="name" placeholder="Your Name" required><br><br>
+                        <input type="text" id="phone" placeholder="Your Phone Number" required><br><br>
+                        <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="nsdlogo.png" alt="NSD Logo" style="height: 200px; width: 200px;">
+                    <h3>NSD SAFETY NETS</h3>
+                </div>
+                <p>Providing premium safety solutions across Hyderabad since 2010. Our mission is to protect families with high-quality, durable safety products.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sb_safety_nets?igsh=amNseDZqeWVsdXlw"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/918332005642"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="tel:+918332005642" class="phone-float" target="_blank">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/918332005642" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/sb_safety_nets?igsh=amNseDZqeWVsdXlw" class="instagram-float" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
