@@ -681,17 +681,20 @@ img {
   padding: 50px 20px;
   text-align: center;
   background: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-carousel {
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .carousel-track {
   display: flex;
-  animation: slide 20s linear infinite;
+  width: fit-content;
+  animation: slide 40s linear infinite;
 }
 
 .carousel-track:hover {
@@ -699,18 +702,51 @@ img {
 }
 
 .carousel-track img {
-  width: 300px;
-  height: 200px;
+  width: 280px;
+  height: 180px;
   object-fit: cover;
   margin: 0 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .carousel-track img {
+    width: 200px;
+    height: 130px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-track img {
+    width: 150px;
+    height: 100px;
+    margin: 0 4px;
+  }
 }
 
 @keyframes slide {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
 
 /* Quick Contact Section */
 .cont-h2{
