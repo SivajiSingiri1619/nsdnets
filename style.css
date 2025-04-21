@@ -1900,3 +1900,39 @@ img {
     text-align: center;
   }
 }
+
+
+
+
+
+/* book service */
+.book-service-btn {
+  background: linear-gradient(135deg, #ff6600, #0077b6);
+  background-size: 200% 200%;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: gradientMove 1s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.book-service-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
